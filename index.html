@@ -1,4 +1,4 @@
-<html><head><base href="https://docs.google.com/spreadsheets/d/1nqyI1yIlV81mRPRYbckQbpqwDJ2c8Xru7nPazeLrEGw/edit?usp=sharing"><meta name="viewport" content="width=device-width, initial-scale=1.0"><style>
+<html><head><base href="https://docs.google.com/spreadsheets/d/14QU7kVYM-ueDOeDDOV25vMa9dfDRnUVlfIs51zBX3IE/edit?usp=sharing"><meta name="viewport" content="width=device-width, initial-scale=1.0"><style>
 /* Existing CSS styles... */
 @keyframes bookFallIn {
   0% {
@@ -462,9 +462,9 @@ function addToRecentReads(book) {
   updateRecentReads();
 }
 const API_KEY = 'AIzaSyCbD-rljbYoW1suOkyq8-ZA__BTtT7UCfU';
-const SPREADSHEET_ID = '1nqyI1yIlV81mRPRYbckQbpqwDJ2c8Xru7nPazeLrEGw';
+const SPREADSHEET_ID = '14QU7kVYM-ueDOeDDOV25vMa9dfDRnUVlfIs51zBX3IE';
 let downloadBooks = {};
-const DOWNLOAD_SPREADSHEET_ID = '1nqyI1yIlV81mRPRYbckQbpqwDJ2c8Xru7nPazeLrEGw';
+const DOWNLOAD_SPREADSHEET_ID = '14QU7kVYM-ueDOeDDOV25vMa9dfDRnUVlfIs51zBX3IE';
 let currentMode = 'read';
 const books = {};
 let currentTab = '';
@@ -562,7 +562,7 @@ async function loadSheetData() {
     tabsContainer.style.padding = '20px';
     tabsContainer.innerHTML = '';
     const mainTitle = document.querySelector('.header h1');
-    mainTitle.textContent = 'Cursos de Psicologia Jurídica';
+    mainTitle.textContent = 'Cursos de Lei Penal Especial';
     for (const sheet of sheets) {
       if (sheet.properties.title.toLowerCase() !== 'frases') {
         const response = await fetch(`https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${sheet.properties.title}?key=${API_KEY}`);
